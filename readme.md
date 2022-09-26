@@ -1,16 +1,10 @@
-# Three.js Journey
+# 3D Generator
+## Live Demo
+https://threejs-physics-jp2t.vercel.app/
 
-## Setup
-Download [Node.js](https://nodejs.org/en/download/).
-Run this followed commands:
+## Abstract
 
-``` bash
-# Install dependencies (only the first time)
-npm install
+3D generator; shows the basic implementation of physics in threejs with the help of 3d library Cannon.js . \
+You can create a sphere, a box or mixed of both and see the interaction of the objects with each other. 
 
-# Run the local server at localhost:8080
-npm run dev
-
-# Build for production in the dist/ directory
-npm run build
-```
+Javascript, Threejs, Cannon.js, lil-gui
