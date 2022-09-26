@@ -34,7 +34,6 @@ debugObject.createMore = () => {
       z: (Math.random() - 0.5) * 3,
     });
   }
-  // camera.position.set(-10, 12, -28);
 };
 
 debugObject.reset = () => {
@@ -132,12 +131,12 @@ scene.add(ambientLight);
 const directionalLight = new THREE.DirectionalLight(0xffffff, 0.2);
 directionalLight.castShadow = true;
 directionalLight.shadow.mapSize.set(1024, 1024);
-directionalLight.shadow.camera.far = 15;
+directionalLight.shadow.camera.far = 3000;
 directionalLight.shadow.camera.left = -7;
 directionalLight.shadow.camera.top = 7;
 directionalLight.shadow.camera.right = 7;
 directionalLight.shadow.camera.bottom = -7;
-directionalLight.position.set(5, 5, 5);
+directionalLight.position.set(0, 5, 15);
 scene.add(directionalLight);
 
 const sizes = {
@@ -160,7 +159,7 @@ window.addEventListener("resize", () => {
 });
 
 const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 0.1, 100);
-camera.position.set(0.169, 1.6879, -19.5826);
+camera.position.set(0.169, 0.5879, -19.5826);
 scene.add(camera);
 
 const controls = new OrbitControls(camera, canvas);
@@ -258,7 +257,6 @@ const tick = () => {
   }
   controls.update();
   renderer.render(scene, camera);
-
   window.requestAnimationFrame(tick);
 };
 tick();
