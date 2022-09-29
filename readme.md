@@ -8,3 +8,4 @@ https://threejs-physics-jp2t.vercel.app/
 You can create a sphere, a box or mixed of both and see the interaction of the objects with each other. 
 
 Javascript, Threejs, Cannon.js, lil-gui
+
